@@ -1,0 +1,44 @@
+{
+    "name": "shegun-babs/smart-recharge-api",
+    "description": "Smart Recharge PHP package",
+    "keywords": [
+        "shegun-babs",
+        "smart-recharge-api"
+    ],
+    "homepage": "https://github.com/shegun-babs/smart-recharge-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shegun Babs",
+            "email": "shegun.babs@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShegunBabs\\SmartRechargeApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShegunBabs\\SmartRechargeApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
