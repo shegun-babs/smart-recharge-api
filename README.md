@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/shegun-babs/smart-recharge-api.svg?style=flat-square)](https://packagist.org/packages/shegun-babs/smart-recharge-api)
 [![Total Downloads](https://img.shields.io/packagist/dt/shegun-babs/smart-recharge-api.svg?style=flat-square)](https://packagist.org/packages/shegun-babs/smart-recharge-api)
-![GitHub Actions](https://github.com/shegun-babs/smart-recharge-api/actions/workflows/main.yml/badge.svg)
+![GitHub Actions](https://github.com/shegun-babs/smart-recharge-api/actions/workflows/ci.yml/badge.svg)
 
 This package is used to simplify usage of SmartRecharge API usage in personal or commercial projects.
 
