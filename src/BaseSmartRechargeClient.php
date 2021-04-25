@@ -23,7 +23,7 @@ class BaseSmartRechargeClient implements SmartRechargeClientInterface
     public function __construct($apikey)
     {
         $config = [
-            'apikey' => $apikey,
+            'api_key' => $apikey,
         ];
 
         $this->defaultOpts = [

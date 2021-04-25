@@ -1,6 +1,6 @@
 <?php
 
-namespace ShegunBabs\SmartRechargeApi;
+namespace SmartRechargeApi;
 
 class SmartRechargeApi
 {

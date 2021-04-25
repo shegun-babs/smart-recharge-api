@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ShegunBabs\SmartRechargeApi;
+namespace SmartRechargeApi;
 
 
 interface SmartRechargeClientInterface

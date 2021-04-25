@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShegunBabs\\SmartRechargeApi\\": "src"
+            "SmartRechargeApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShegunBabs\\SmartRechargeApi\\Tests\\": "tests"
+            "SmartRechargeApi\\Tests\\": "tests"
         }
     },
     "scripts": {
