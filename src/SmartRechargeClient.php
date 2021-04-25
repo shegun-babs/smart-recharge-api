@@ -4,18 +4,18 @@
 namespace SmartRechargeApi;
 
 
-use ShegunBabs\SmartRechargeApi\BaseSmartRechargeClient;
+use SmartRechargeApi\Services\Airtime;
 
 /**
  * Class SmartRechargeClient
- *
+ * @property Airtime $airtime
  * @package SmartRechargeApi
  */
 
 class SmartRechargeClient extends BaseSmartRechargeClient
 {
 
-    private object $coreServiceFactory;
+    private $coreServiceFactory;
 
 
     public function __get($name)

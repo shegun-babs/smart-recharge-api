@@ -11,10 +11,8 @@ class Airtime extends AbstractService
 
     public function buyAirtime(array $params) : array
     {
+        $params = array_merge(['api_key' => $this->apikey], $params);
         $url_query = http_build_query($params);
-        $api_key = $this->getApiKey();
-        $path = 'airtime/?';
-
-
+        $path = "airtime/?$url_query";
     }
 }

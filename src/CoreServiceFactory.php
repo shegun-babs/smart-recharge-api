@@ -25,8 +25,8 @@ class CoreServiceFactory extends AbstractServiceFactory
         "dataShare" => DataShare::class,
     ];
 
-    protected function getServiceClass($name)
+    public function getServiceClass($name)
     {
-        // TODO: Implement getServiceClass() method.
+        return self::$classMap[$name] ?? null;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ShegunBabs\SmartRechargeApi;
+namespace SmartRechargeApi;
 
 
 use GuzzleHttp\Client;
@@ -43,7 +43,7 @@ class BaseSmartRechargeClient implements SmartRechargeClientInterface
 
     public function getApiKey(): string
     {
-        return $this->config['apikey'];
+        return $this->config['api_key'];
     }
 
 

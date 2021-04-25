@@ -27,7 +27,7 @@ abstract class AbstractServiceFactory
     {
         $serviceClass = $this->getServiceClass($name);
 
-        if ( null === $serviceClass )
+        if ( !empty($serviceClass) )
         {
             if ( !array_key_exists($name, $this->services) )
             {

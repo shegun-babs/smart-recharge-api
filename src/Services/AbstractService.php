@@ -10,6 +10,7 @@ abstract class AbstractService
 {
 
     protected $client;
+    protected $apikey;
 
     /**
      * @return SmartRechargeClient
@@ -19,6 +20,7 @@ abstract class AbstractService
         return $this->client;
     }
 
+
     /**
      * AbstractService constructor.
      * @param $client
@@ -26,11 +28,12 @@ abstract class AbstractService
     public function __construct(SmartRechargeClient $client)
     {
         $this->client = $client;
+        $this->apikey = $client->getApiKey();
     }
 
 
-    protected function getApiKey() : string {
-        $this->client->getApiKey();
+    public function getApiKey() : string {
+        return $this->apikey;
     }
 
 
