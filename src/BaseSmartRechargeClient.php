@@ -47,7 +47,7 @@ class BaseSmartRechargeClient implements SmartRechargeClientInterface
     }
 
 
-    public function getOpts(): string
+    public function getOpts(): array
     {
         return $this->defaultOpts;
     }

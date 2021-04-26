@@ -5,6 +5,7 @@ namespace SmartRechargeApi;
 
 
 use SmartRechargeApi\Services\Airtime;
+use SmartRechargeApi\Services\Balance;
 use SmartRechargeApi\Services\DataShare;
 use SmartRechargeApi\Services\DirectData;
 
@@ -13,6 +14,7 @@ use SmartRechargeApi\Services\DirectData;
  * @property Airtime $airtime
  * @property DataShare $dataShare
  * @property DirectData $directData
+ * @property Balance $balance
  * @package SmartRechargeApi
  */
 
@@ -23,6 +25,7 @@ class CoreServiceFactory extends AbstractServiceFactory
         "airtime" => Airtime::class,
         "directData" => DataShare::class,
         "dataShare" => DataShare::class,
+        'balance' => Balance::class,
     ];
 
     public function getServiceClass($name)

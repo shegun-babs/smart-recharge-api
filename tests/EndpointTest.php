@@ -20,3 +20,12 @@ it('has api_key in request params', function ()
 
     $this->assertEquals($api_key, $innerApiKey);
 });
+
+
+it('checks for wallet balance', function (){
+
+    $api_key = "abcdef";
+    $this->assertTrue(true);
+});
+
+

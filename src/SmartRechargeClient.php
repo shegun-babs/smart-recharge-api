@@ -5,10 +5,12 @@ namespace SmartRechargeApi;
 
 
 use SmartRechargeApi\Services\Airtime;
+use SmartRechargeApi\Services\Balance;
 
 /**
  * Class SmartRechargeClient
  * @property Airtime $airtime
+ * @property Balance $balance
  * @package SmartRechargeApi
  */
 
