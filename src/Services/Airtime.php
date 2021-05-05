@@ -24,9 +24,9 @@ class Airtime extends AbstractService
     }
 
 
-    public function checkAirtime($params): array
+    public function checkAirtime($order_id): array
     {
-        $params = array_merge(['api_key' => $this->getApiKey()], $params);
+        $params = ['api_key' => $this->getApiKey(), 'task' => 'check_status', 'order_id' => $order_id];
         $path = $this->path.http_build_query($params);
 
         return $this->request("GET", $path);
