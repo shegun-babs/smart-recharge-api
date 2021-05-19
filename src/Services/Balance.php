@@ -7,16 +7,11 @@ namespace SmartRechargeApi\Services;
 class Balance extends AbstractService
 {
 
-    protected $path = "http://smartrecharge.ng/api/v1/http.php?";
+    protected $path = 'others/get_account_balance.php/';
 
-
-    private function getBalances()
+    public function getBalances()
     {
-        $params = http_build_query(
-            ['balance' => "true", 'api_key' => $this->getApiKey()]
-        );
-
-        $path = $this->path.$params;
+        $path = $this->path. '?api_key=' . $this->getApiKey();
 
         return $this->request('GET', $path);
     }
@@ -31,5 +26,12 @@ class Balance extends AbstractService
     public function sms() : string
     {
         return $this->getBalances()['sms'];
+    }
+
+    public function __get($name)
+    {
+        if ( method_exists($this, $name) ){
+            return $this->{$name}();
+        }
     }
 }
