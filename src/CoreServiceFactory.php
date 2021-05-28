@@ -8,6 +8,7 @@ use SmartRechargeApi\Services\Airtime;
 use SmartRechargeApi\Services\Balance;
 use SmartRechargeApi\Services\DataShare;
 use SmartRechargeApi\Services\DirectData;
+use SmartRechargeApi\Services\Service;
 
 /**
  * Class CoreServiceFactory
@@ -15,6 +16,8 @@ use SmartRechargeApi\Services\DirectData;
  * @property DataShare $dataShare
  * @property DirectData $directData
  * @property Balance $balance
+ * @property Service $service
+ *
  * @package SmartRechargeApi
  */
 
@@ -26,6 +29,7 @@ class CoreServiceFactory extends AbstractServiceFactory
         "directData" => DataShare::class,
         "dataShare" => DataShare::class,
         'balance' => Balance::class,
+        'service' => Service::class,
     ];
 
     public function getServiceClass($name)
