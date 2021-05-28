@@ -37,7 +37,13 @@ class Service extends AbstractService
      */
     public function listAvailableServices($service_code, $sub_service_code): array
     {
-        $path = "others/get_available_services.php?api_key".$this->getApiKey()."=&service_code=$service_code&sub_service_code=$sub_service_code";
+        $path = "others/get_available_services.php?";
+        $params = http_build_query([
+            'api_key' => $this->getApiKey(),
+            'service_code' => $service_code,
+            'sub_service_code' => $sub_service_code,
+        ]);
+        $path .= $params;
         return $this->request('POST', $path);
     }
 }
