@@ -26,7 +26,7 @@ class CoreServiceFactory extends AbstractServiceFactory
 
     private static $classMap = [
         "airtime" => Airtime::class,
-        "directData" => DataShare::class,
+        "directData" => DirectData::class,
         "dataShare" => DataShare::class,
         'balance' => Balance::class,
         'service' => Service::class,

@@ -25,7 +25,13 @@ class Service extends AbstractService
      */
     public function listSubServices($service_code): array
     {
-        $path = "others/get_sub_services.php?api_key=".$this->getApiKey()."&service_code=$service_code";
+        $path = "others/get_sub_services.php?";
+        $params = [
+            'api_key' => $this->getApiKey(),
+            'service_code' => $service_code,
+        ];
+        $path .= $params;
+
         return $this->request('POST', $path);
     }
 

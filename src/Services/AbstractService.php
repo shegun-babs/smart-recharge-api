@@ -4,6 +4,7 @@
 namespace SmartRechargeApi\Services;
 
 
+use phpDocumentor\Reflection\Types\This;
 use SmartRechargeApi\SmartRechargeClient;
 
 abstract class AbstractService
