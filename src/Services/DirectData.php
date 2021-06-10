@@ -10,6 +10,10 @@ class DirectData extends AbstractService
     protected string $path = "directdata/?";
 
 
+    /**
+     * @param array $params ['product_code' => '...', 'phone' => '...']
+     * @return array
+     */
     public function buyData(array $params): array
     {
         $params = array_merge(['api_key' => $this->apikey], $params);
@@ -20,6 +24,10 @@ class DirectData extends AbstractService
     }
 
 
+    /**
+     * @param $order_id
+     * @return array
+     */
     public function checkDataOrder($order_id): array
     {
         $params = ['api_key' => $this->getApiKey(), 'task' => 'check_status', 'order_id' => $order_id];
